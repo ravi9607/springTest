@@ -1,16 +1,17 @@
 package com.example.thymelefetest.controller;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController                 // Thymeleaf used only Controller
+@Controller                 // Thymeleaf used only Controller
 public class MyController { // only GET and POST request velid
 
     @RequestMapping("/about")
     public String findAll(){
-        return "Hello World!";
+        return "about";
     }
 
 //    @GetMapping(value = "/about")
