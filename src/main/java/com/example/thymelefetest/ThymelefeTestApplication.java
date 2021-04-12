@@ -11,9 +11,10 @@ public class ThymelefeTestApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(ThymelefeTestApplication.class, args);
     }
+
+
     @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder
-                                                         application) {
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(ThymelefeTestApplication.class);
     }
 
